@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Firebase Train Scheduler</title>
+
+	<!-- Link to Firebase database -->
+	<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+	<!-- Link to jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Link to bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<!-- Link to css reset sheet -->
+	<link rel="stylesheet" type="reset/css" href="css/reset.css">
+	<!-- Link to css style sheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	<!-- ***Do I need to add a jquery link later in code??*** -->
+</head>
+
+<body>
+	<!-- Create a wrapper to hold the whole page -->
+	<div class="container">
+
+		<!-- Wrapper for the header container only -->
+		<!-- <div class="header-wrapper"> -->
+		<div class="jumbotron">
+			<h1 class="header">Anytime is Train Time</h1>
+		</div>
+
+		<!-- Wrapper for card container #1 -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Current Train Schedule</h3>
+			</div>
+				<div class="panel-body">
+				<!-- **ADD HERE ALL TRAIN SCHEDULE INFO INCLUDING: TRAIN NAME, DESTINATION, FREQUENCY, NEXT ARRIVAL, MINUTES AWAY** -->
+
+
+				</div>
+		</div>
+
+		<!-- Wrapper for card container #2 -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Add Train</h3>
+			</div>
+				<div class="panel-body">
+				<!-- Create a form for all labels and blank fill in -->
+					<form id="add-form">
+					<!-- All same group names throughout the form -->
+					<!-- Train title form field -->
+						<div class="form-group">
+						<!-- Label classes should all be different names to class and reference each category -->
+							<label for="train-title">Train Name</label>
+						<!-- Input include type, class, and id -->
+							<input type="text" class="form-control" id="train-title">
+						</div>
+
+						<!-- Train Destination form field -->
+						<div class="form-group">
+							<label for="destination">Destination</label>
+							<input type="text" class="form-control" id="destination">
+						</div>
+
+						<!-- First train time form field -->
+						<div class="form-group">
+							<label for="first-train-time">First Train Time (HH:mm - military time)</label>
+							<input type="text" class="form-control" id="first-train-time">
+						</div>
+
+						<!-- Frequency -->
+						<div class="form-group">
+							<label for="frequency">Frequency (min)</label>
+							<input type="text" class="form-control" id="frequency">
+						</div>
+					<!-- Create a button -->
+					<button type="submit" id="submit" class="submit-button">Submit</button>
+					</form>
+				</div>
+		</div>
+
+
+			</div>
+		</div>
+	</div>
+	<script src="./javascript/schedule.js"></script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,31 @@
+body {
+	line-height: 1.5;
+}
+.jumbotron {
+	background: #B24B26;
+	height: 100px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+h1 {
+	font-size: 50px;
+	color: white;
+	padding-top: 20px;
+	text-align: center;
+}
+/*Change the class name for the panel panel-default panel?*/
+.panelpanelDefault {
+	background: #0EB28F;
+	height: 30px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+h3 {
+	font-size: 24px;
+	color: white;
+	padding-top: 20px;
+	text-align: center;
+}
+.addTrain {
+	margin-bottom: 20px;
+}
